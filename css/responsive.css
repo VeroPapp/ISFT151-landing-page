@@ -1,0 +1,97 @@
+/*cuando el ancho de la pantalla sea menor a 430px*/
+@media (max-width: 430px) {
+    body {
+        font-size: 30%;
+    }
+}
+
+/*cuando el ancho de la pantalla sea menor a 1024px*/
+@media (max-width: 1024px) {
+    .container {
+        max-width: 900px;
+        margin: auto;
+      }
+}
+
+/*cuando el ancho de la pantalla sea mayor a 1024px*/
+@media screen and (min-width: 1024px) {
+
+    /*----------ICONO MENU HAMBURGUESA----------*/
+    .lineas-menu-hamb{
+        display: none;
+    }
+
+    .menu{
+        display: flex;
+        justify-content: flex-end; /* Alinea el menú a la derecha */
+        align-items: center; /* Centra verticalmente los elementos */
+        flex: 1; /* Expande el menú al máximo disponible */
+    }
+
+    .menu ul{
+        list-style: none;
+        display: flex;
+    }
+
+    .menu ul li{
+        margin-left: 20px;
+    }
+
+    .links{
+        list-style: none;
+        display: flex;
+        align-items: center; /* Centra verticalmente los enlaces */
+        margin-left: 20px;
+    }
+    
+    .menu .smedia{
+        margin-left: 20px
+    }
+
+    /*----------NAVBAR----------*/
+    .nav{
+        display: flex;
+    }
+
+    .nav li {
+        flex: 3 1 auto;
+        display: flex;
+        justify-content: right;
+        margin-right: 20px;
+    }
+
+    .nav a:hover {
+        color: #45c6ea;
+  
+    }
+
+    .hero h1{
+        margin-bottom: 10px;
+        font-size: 5vw;
+    }
+
+    .smedia{
+        flex: 1 1 auto;
+        margin-left: 10px;
+        border-left: 1px solid white;
+   
+    }
+
+    .nav i:hover{
+        color: #0D1216;     
+    }
+
+    #logo{
+        flex: 1 1 auto;
+    }
+
+    .hero button{
+        background-color:#020f15;
+        border: 1px #031220;
+    }
+
+    .hero button:hover{
+        background-color:#45b3ea;
+        border: 1px #3584ce;
+    }
+}

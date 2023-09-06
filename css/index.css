@@ -1,0 +1,234 @@
+*{
+  box-sizing: border-box; 
+  padding: 0; margin: 0; 
+  color: white;
+}
+
+h1{
+  font-family: 'Merriweather';
+  color: rgb(238, 238, 238);
+  text-align: center;
+  text-shadow: 1px 1px 2px rgb(82, 82, 82);
+}
+
+h2{
+  font-family: 'Montserrat', Light;
+  font-size: 2.5em;
+  letter-spacing: 2.5px;
+  color: rgb(238, 238, 238);
+  text-align: center;
+  text-shadow: 1px 1px 2px rgb(82, 82, 82);
+}
+
+p{
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 1.5em; 
+  text-align: justify;
+}
+
+a{
+  font-family: 'Open Sans', sans-serif; 
+  font-weight: 800;
+  text-decoration: none;
+}
+
+i {
+  font-size: 30px;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* ---------- MENÚ HAMBURGUESA ----------*/ 
+.lineas-menu-hamb{
+	position:fixed;
+  background-color:transparent;
+	left:0;
+	top:0;
+	height:30px;
+	width:30px;
+	padding:20px 20px;
+	-webkit-transform:translate3d(0, 0, 0);
+	transform:translate3d(0, 0, 0);
+	-webkit-transition:-webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+	transition:transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+	z-index:1002;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none
+}
+
+.lineas-menu-hamb.is-active{
+  background-color:none;
+}
+
+._layer{
+	background:#f1f0f0; /*color de las barras de menu*/
+	margin-bottom:4px;
+	border-radius:2px;
+	width:28px;
+	height:4px;
+	opacity:1;
+	-webkit-transform:translate3d(0, 0, 0);
+	transform:translate3d(0, 0, 0);
+	-webkit-transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+	transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+}
+
+.lineas-menu-hamb:hover .-top{
+	-webkit-transform:translateY(-100%);
+	-ms-transform:translateY(-100%);
+	transform:translateY(-100%);
+}
+
+.lineas-menu-hamb:hover .-bottom{
+	-webkit-transform:translateY(50%);
+	-ms-transform:translateY(100%);
+	transform:translateY(100%);
+}
+
+.lineas-menu-hamb.is-active .-top{
+	-webkit-transform:translateY(200%) rotate(45deg) !important;
+	-ms-transform:translateY(200%) rotate(45deg) !important;
+	transform:translateY(200%) rotate(45deg) !important;
+}
+
+.lineas-menu-hamb.is-active .-mid{
+	opacity:0;
+}
+
+.lineas-menu-hamb.is-active .-bottom{
+	-webkit-transform:translateY(-200%) rotate(135deg) !important;
+	-ms-transform:translateY(-200%) rotate(135deg) !important;
+	transform:translateY(-200%) rotate(135deg) !important;
+}
+
+.menu.is_active{
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.menu{
+  background-color: rgba(6, 5, 5, 0.97);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  transform: translate3d(0px, -100%, 0px);
+  transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
+  width: 100%;
+  z-index: 1001;
+}
+
+.menu ul li { 
+  margin: 0;
+  padding: 0;
+  list-style: none;
+	text-align: center;
+	font-family: Verdana, Arial, Helvetica;
+	font-size:1.5rem;
+	line-height:3em;
+	height:3em;
+	text-transform: none;
+	font-weight: bold;
+}
+
+#logo {
+  text-align: end;
+}
+
+.nav a {
+  float: center;
+  color: rgb(223, 227, 228);
+  padding: 10px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.smedia{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*----------HERO----------*/
+header{
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  animation: banner 10s infinite;
+}
+
+@keyframes banner{
+  0%, 30% {
+    background-image: url(../img/hero1.jpg);
+  }
+
+  35%, 65% {
+    background-image: url(../img/hero2.jpg);
+  }
+
+  70%, 100% {
+    background-image: url(../img/hero3.jpg)
+  }
+}
+
+.hero{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+.hero h1{
+  margin-bottom: 10px;
+  font-size: 10vw;
+}
+
+.hero h2{
+  margin-bottom: 5vh;
+}
+
+/*ANIMACIÓN H1 - tracking-in-expand*/
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+  
+.tracking-in-expand {
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+/*----------BOTON - HERO----------*/
+.hero button{
+  font-size: 1em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid #528ec7;
+  color:white; 
+  background-color:#45b3ea;
+}
+
+#s1-INDEX{
+  background-color: #528ec7;
+}

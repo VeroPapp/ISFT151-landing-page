@@ -3,8 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="img/favicon.ico">
+        <link rel="icon" href="img/favicon3.ico">
         <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/responsive.css">
         <script src="https://kit.fontawesome.com/2e3e7b8e83.js"></script>
         <title>ISFT N° 151</title>
     </head>
@@ -12,48 +13,54 @@
     <body>
         <header>
             <!----------NAVBAR---------->
-            <div class="nav">
+            <div class="container">
                 <div id="logo">   
                     <a href="index.html">
-                        <img src="img/logo.jpg" alt="logo" width="70px">
+                        <img src="img/logo2.png" alt="logo ISFT N°151" width="150vw">
                     </a>
                 </div>
 
-                <div id="links">
-                    <a href="carreras.html">OFERTA ACADEMICA</a>
-                    <a href="ingresantes.html">INGRESANTES</a>
-                    <a href="institucional.html">INSTITUCIONAL</a>
-                        <button>
-                            <a href="contacto.html">CONTACTO</a>
-                        </button>
-                </div>
-
-                <div class="smedia">
-                    <a href="https://www.facebook.com/isft151" target="_blank">
-                        <i class="fa-brands fa-facebook"></i>
+                <!----------MENÚ HAMBURGUESA---------->
+                <nav class="nav">
+                    <div class="lineas-menu-hamb">
+                        <div class="_layer -top"></div>
+                        <div class="_layer -mid"></div>
+                        <div class="_layer -bottom"></div>
+                    </div>
+                    <div class="menu">
+                        <ul class="links">
+                            <li><a href="carreras.html">CARRERAS</a></li>
+                            <li><a href="ingresantes.html">INGRESANTES</a></li>
+                            <li><a href="contacto.html">CONTACTO</a></li>
+                        </ul>
+                        <div class="smedia">
+                            <a href="https://www.facebook.com/isft151"><i class="fa-brands fa-facebook"></i></a></li>
+                            <a href="https://www.instagram.com/instituto.superior.151"><i class="fa-brands fa-instagram"></i></a></li>
+                        </div>
+                    </div>
+                </nav>
+                
+                <!----------HERO---------->
+                <section class="hero">
+                    <div class="titulos-portada">
+                        <h1 class="tracking-in-expand">INSTITUTO SUPERIOR DE FORMACIÓN TÉCNICA</h1>
+                        <h2 class="tracking-in-expand">Nº 151</h2>
+                    </div>
+                    <a href="formulario-google">
+                        <button>INSCRIPCION</button>
                     </a>
-                    <a href="https://www.instagram.com/instituto.superior.151" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="https://api.whatsapp.com/send?phone=2267442534&text=Hola!%20Quisiera%20hacer%20una%20consulta." target="_blank">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a>
-                </div>
-            </div>
-
-            <!----------HERO---------->
-            <div class="hero">
-                <div class="titulos-portada">
-                    <h1 class="tracking-in-expand">INSTITUTO SUPERIOR DE FORMACIÓN TÉCNICA</h1>
-                    <h2 class="tracking-in-expand">Nº 196</h2>
-                </div>
-                <a href="formulario-google">
-                    <button>INSCRIPCION</button>
-                </a>
+                </section>
             </div>
         </header>
+            
+        <section id="s1-INDEX">
+            <div class="container">
+                <h1>CARRERAS</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam porro voluptate sint nam rerum placeat quasi tempore consequuntur vel tempora minus velit eos sequi quam iusto vitae quae commodi eius accusantium deserunt sed, libero hic corrupti in. Aspernatur eveniet impedit odio earum. In fuga esse provident natus fugiat atque quaerat.</p>
+            </div>
+        </section>
 
-
+        <script src="js/menu-hamb.js"></script>
     </body>
 
 </html>
