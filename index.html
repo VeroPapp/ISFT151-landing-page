@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="img/favicon3.ico">
         <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/responsiv.css">
         <script src="https://kit.fontawesome.com/2e3e7b8e83.js"></script>
         <title>ISFT N° 151</title>
     </head>
@@ -13,54 +13,98 @@
     <body>
         <header>
             <!----------NAVBAR---------->
-            <div class="container">
-                <div id="logo">   
-                    <a href="index.html">
-                        <img src="img/logo2.png" alt="logo ISFT N°151" width="150vw">
-                    </a>
-                </div>
-
-                <!----------MENÚ HAMBURGUESA---------->
-                <nav class="nav">
-                    <div class="lineas-menu-hamb">
-                        <div class="_layer -top"></div>
-                        <div class="_layer -mid"></div>
-                        <div class="_layer -bottom"></div>
-                    </div>
-                    <div class="menu">
-                        <ul class="links">
-                            <li><a href="carreras.html">CARRERAS</a></li>
-                            <li><a href="ingresantes.html">INGRESANTES</a></li>
-                            <li><a href="contacto.html">CONTACTO</a></li>
-                        </ul>
-                        <div class="smedia">
-                            <a href="https://www.facebook.com/isft151"><i class="fa-brands fa-facebook"></i></a></li>
-                            <a href="https://www.instagram.com/instituto.superior.151"><i class="fa-brands fa-instagram"></i></a></li>
+            <div id="nav-background">
+                <div class="container">
+                    <div id="nav">
+                        <div id="logo">   
+                            <a href="index.html">
+                                <img src="img/logo2.webp" alt="logo ISFT N°151" width="150vw">
+                            </a>
                         </div>
+
+                        <nav>
+                            <a href="index.html">INICIO</a>
+                            <a href="carreras.html">CARRERAS</a>
+                            <a href="ingresantes.html">INGRESANTES 2024</a>
+                            <a href="contacto.html">CONTACTO</a>
+                            <a class="smedia" href="https://www.facebook.com/isft151"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/instituto.superior.151"><i class="fa-brands fa-instagram"></i></a>
+                        </nav>
                     </div>
-                </nav>
-                
+                </div> <!-- / div container -->
+            </div>
+                    
                 <!----------HERO---------->
-                <section class="hero">
-                    <div class="titulos-portada">
+                <section id="hero" class="container">
+                    <div class="main-titles">
                         <h1 class="tracking-in-expand">INSTITUTO SUPERIOR DE FORMACIÓN TÉCNICA</h1>
-                        <h2 class="tracking-in-expand">Nº 151</h2>
+                        <h2 class="tracking-in-expand">- Nº 151 -</h2>
                     </div>
                     <a href="formulario-google">
-                        <button>INSCRIPCION</button>
+                        <button>INSCRIPCIÓN</button>
                     </a>
                 </section>
-            </div>
         </header>
-            
-        <section id="s1-INDEX">
-            <div class="container">
-                <h1>CARRERAS</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam porro voluptate sint nam rerum placeat quasi tempore consequuntur vel tempora minus velit eos sequi quam iusto vitae quae commodi eius accusantium deserunt sed, libero hic corrupti in. Aspernatur eveniet impedit odio earum. In fuga esse provident natus fugiat atque quaerat.</p>
+        
+        <section class="container" id="s1-ISFT">
+            <div>
+                <img src="img/instituto.webp" alt="El instituto" width="600vw">
+            </div>
+                
+            <div>
+                <h2>Tecnicaturas<br>superiores oficiales,<br>públicas y <span>gratuitas</span></h2>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt sed adipisci, ducimus molestias voluptatum similique distinctio soluta necessitatibus quod repellendus dicta animi vel delectus suscipit itaque aut quae ullam. Quod id officia iusto illum, repudiandae recusandae dolorem sint! Placeat aliquid, quibusdam commodi sequi perferendis consequuntur repellat laborum odio doloribus qui nesciunt quas ullam voluptates, cupiditate provident explicabo hic laboriosam aperiam iure inventore mollitia eum ipsam.</p>
             </div>
         </section>
 
-        <script src="js/menu-hamb.js"></script>
+        <section id="s2">
+            <h2>NUESTRAS CARRERAS</h2>
+            <div class="container" id="s2-career-cards">
+                <div class="card" id="sistemas">
+                    <div class="card-details">
+                      <p class="text-title">Análisis de sistemas</p>
+                    </div>
+                    <a href="???">
+                        <button class="card-button">+ info</button>
+                    </a>
+                </div>
+                
+                <div class="card" id="at">
+                    <div class="card-details">
+                      <p class="text-title">Acompañante terapéutico</p>
+                    </div>
+                    <a href="???">
+                        <button class="card-button">+ info</button>
+                    </a>
+                </div>
+
+                <div class="card" id="construccion">
+                    <div class="card-details">
+                      <p class="text-title">Construcción sustentable</p>
+                    </div>
+                    <a href="???">
+                        <button class="card-button">+ info</button>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <div class="card-details">
+                      <p class="text-title">Gestión ambiental y salud</p>
+                    </div>
+                    <a href="???">
+                        <button class="card-button">+ info</button>
+                    </a>
+                </div>
+
+
+                
+            </div> <!-- / div container -->
+        </section>
+
+
+
+
     </body>
 
 </html>
