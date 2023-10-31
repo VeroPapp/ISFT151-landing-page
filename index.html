@@ -4,189 +4,223 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="img/favicon3.ico">
-        <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="css/responsiv.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/responsive.css">
         <script src="https://kit.fontawesome.com/2e3e7b8e83.js"></script>
+       
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        
         <title>ISFT N° 151</title>
     </head>
 
     <body>
-        <header>
+        <div class="container">
             <!----------NAVBAR---------->
-            <div id="nav-background">
-                <div class="container">
-                    <div id="nav">
-                        <div id="logo">   
-                            <a href="index.html">
-                                <img src="img/logo2.webp" alt="logo ISFT N°151" width="150vw">
-                            </a>
-                        </div>
-
-                        <nav>
-                            <a href="index.html" id="pag-inicio">INICIO</a>
-                            <a href="carreras.html">CARRERAS</a>
-                            <a href="contacto.html">CONTACTO</a>
-                            <a class="smedia" href="https://www.facebook.com/isft151"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="https://www.instagram.com/instituto.superior.151"><i class="fa-brands fa-instagram"></i></a>
-                        </nav>
-                    </div>
-                </div> <!-- / div container -->
+            <div class="navbar">
+                <div>
+                    <img src="/img/logo2.webp" alt="logo" width="150vh">
+                    <img src="/img/logo-pba.webp" alt="logo" width="250vh">
+                </div>
+                <nav>
+                    <a href="#enroll">INSCRIPCIONES</a>
+                    <a href="#careers">CARRERAS</a>
+                    <button><a href="#contact">CONTACTO</a></button>
+                    <a id="smedia" href="https://www.facebook.com/isft151" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/instituto.superior.151" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </nav>
             </div>
-                    
-                <!----------HERO---------->
-                <section id="hero" class="container">
-                    <div class="main-titles">
-                        <h1 class="tracking-in-expand">INSTITUTO SUPERIOR DE FORMACIÓN TÉCNICA</h1>
-                        <h2 class="tracking-in-expand">- Nº 151 -</h2>
-                    </div>
-                    <a href="formulario-google">
-                        <button>INSCRIPCIÓN</button>
-                    </a>
-                </section>
-        </header>
+            
+            <!----------HEADER---------->
+            <header>
+                <div id="header-titles">
+                    <h1>INSTITUTO SUPERIOR DE <br><span>FORMACIÓN TÉCNICA</span><br>N° 151</h1>
+                    <button id="btn-header"><a href="#enroll">INSCRIPCIONES</a></button>
+                </div>
+                <div class="img-header"> </div>
+            </header>
+        </div>  <!-- /container -->  
         
-        <section class="container" id="s1-ISFT">
-            <div>
-                <img src="img/instituto.webp" alt="El instituto" width="600vw">
-            </div>
-                
-            <div>
-                <h2>Tecnicaturas<br>superiores oficiales,<br>públicas y <span>gratuitas</span></h2>
+        <!----------SECTION 1---------->
+        <section class="section1">
+            <div id="bkgd-s1"></div>
+            <div class="container">
+                <h2>TECNICATURAS SUPERIORES<br>OFICIALES, PÚBLICAS Y<br>GRATUITAS</h2>
             </div>
         </section>
 
-        <section id="s2">
-            <h2>NUESTRAS CARRERAS</h2>
-            <div class="container" id="s2-career-cards">
-                <div class="card">
-                    <img src="img/sistemas.webp" alt="">
-                    <div class="card__content">
-                        <p class="card__title">Análisis de sistemas</p>
-                        <p class="card__description">La Tecnicatura en Análisis de Sistemas te forma para crear soluciones tecnológicas y optimizar sistemas informáticos, aplicando métodos analíticos y creativos. Adquirirás habilidades esenciales para el diseño, implementación y seguridad de sistemas.</p>
-                        <div class="card__buttons">
-                            <a href="" target="_blank">
-                                <button class="card__button">Inscribirse</button>
-                            </a>
-                            <a href="https://drive.google.com/file/d/1xh53EwfurtSFZeYJpO4_qe3e5k0NmMWR/view?pli=1" target="_blank">
-                                <button class="card__button secondary">Plan de estudio</button>
-                            </a>
-                        </div>
-                    </div>
+        <!----------SECTION 2 - CAREERS---------->
+        <div class="container">
+            <section class="section2" id="careers">
+                <h2>NUESTRAS <span>CARRERAS</span></h2>
+                <!----------LEFT ARROW---------->
+                <div class="carousel-nav">
+                    <button id="prev-button"><i class="fas fa-chevron-left"></i></button>
+                </div>
+                <!----------RIGHT ARROW---------->
+                <div class="carousel-nav">
+                    <button id="next-button"><i class="fas fa-chevron-right"></i></button>
                 </div>
 
-                <div class="card">
-                    <img src="img/at.webp" alt="">
-                    <div class="card__content">
-                        <p class="card__title">Acompañante terapéutico</p>
-                        <p class="card__description">La Tecnicatura en Acompañante Terapéutico te prepara para brindar apoyo a personas en situación de vulnerabilidad. Adquirirás habilidades para asistir emocionalmente y favorecer su integración social.</p>
-                        <div class="card__buttons">
-                            <a href="" target="_blank">
-                                <button class="card__button">Inscribirse</button>
-                            </a>
-                            <a href="https://drive.google.com/file/d/1xh53EwfurtSFZeYJpO4_qe3e5k0NmMWR/view?pli=1" target="_blank">
-                                <button class="card__button secondary">Plan de estudio</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <div class="carousel-inner">
+                            <!-- CARD 1 -->
+                            <div class="card">
+                                <img src="/img/sistemas.webp" alt="Análisis de sistemas">
+                                <h3 class="card-title">Análisis de sistemas</h3>
+                                <p>La Tecnicatura en Análisis de Sistemas te forma para crear soluciones tecnológicas y optimizar sistemas informáticos, aplicando métodos analíticos y creativos. Adquirirás habilidades esenciales para el diseño, implementación y seguridad de sistemas.</p>
+                                <div class="card-footer">
+                                    <button class="button"><a href="https://drive.google.com/file/d/1xh53EwfurtSFZeYJpO4_qe3e5k0NmMWR/view?usp=drive_link" target="_blank">Plan de estudio</a></button>
+                                    <div class="icon-clock">
+                                        <i class="fas fa-clock"></i>
+                                        <span>3 años</span>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <!-- CARD 2 -->
+                            <div class="card">
+                                <img src="/img/at.webp" alt="Acompañante terapéutico">
+                                <h3 class="card-title">Acompañante<br> terapéutico</h3>
+                                <p>La Tecnicatura en Acompañante Terapéutico te prepara para brindar apoyo a personas en situación de vulnerabilidad. Adquirirás habilidades para asistir emocionalmente y favorecer su integración social. </p>
+                                <div class="card-footer">
+                                    <button class="button"><a href="https://drive.google.com/file/d/1ZoLsdaC0loR8N_dlUqLZJyE2TNQatc_D/view?usp=drive_link" target="_blank">Plan de estudio</a></button>
+                                    <div class="icon-clock">
+                                        <i class="fas fa-clock"></i>
+                                        <span>3 años</span>
+                                    </div>
+                                </div>
+                            </div>
 
-                <div class="card">
-                    <img src="img/construccion.webp" alt="">
-                    <div class="card__content">
-                        <p class="card__title">Construcción sustentable</p>
-                        <p class="card__description">La Tecnicatura en Construcción Sustentable te forma para aplicar métodos ecológicos en la edificación, enfocándose en la eficiencia energética y el cuidado del medio ambiente. Adquirirás habilidades para diseñar y construir espacios amigables y sustentables.</p>
-                        <div class="card__buttons">
-                            <a href="" target="_blank">
-                                <button class="card__button">Inscribirse</button>
-                            </a>
-                            <a href="https://drive.google.com/file/d/1xh53EwfurtSFZeYJpO4_qe3e5k0NmMWR/view?pli=1" target="_blank">
-                                <button class="card__button secondary">Plan de estudio</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                            <!-- CARD 3 - FALTA PLAN DE ESTUDIO-->
+                            <div class="card">
+                                    <img src="/img/construccion.webp" alt="Construcción sustentable">
+                                    <h3 class="card-title">Construcción sustentable</h3>
+                                    <p>La especialización en Construcción Sustentable te forma para aplicar métodos ecológicos en la edificación, enfocándose en la eficiencia energética y el cuidado del medio ambiente. Adquirirás habilidades para diseñar y construir espacios amigables y sustentables.</p>
+                                    <div class="card-footer">
+                                        <button class="button"><a href="#" target="_blank">Plan de estudio</a></button>
+                                        <div class="icon-clock">
+                                            <i class="fas fa-clock"></i>
+                                            <span>1.5 años</span>
+                                        </div>
+                                    </div>
+                            </div>
 
-                <div class="card">
-                    <img src="img/ambiental.webp" alt="">
-                    <div class="card__content">
-                        <p class="card__title">Gestión ambiental y salud</p>
-                        <p class="card__description">La Tecnicatura en Gestión Ambiental y Salud te capacita para abordar desafíos ambientales y su relación con la salud. Adquirirás habilidades para diseñar estrategias de gestión sostenible y promover un entorno saludable.</p>
-                        <div class="card__buttons">
-                            <a href="" target="_blank">
-                                <button class="card__button">Inscribirse</button>
-                            </a>
-                            <a href="https://drive.google.com/file/d/1xh53EwfurtSFZeYJpO4_qe3e5k0NmMWR/view?pli=1" target="_blank">
-                                <button class="card__button secondary">Plan de estudio</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                            <!-- CARD 4 -->
+                            <div class="card">
+                                    <img src="/img/ambiental.webp" alt="Gestión ambiental y salud">
+                                    <h3 class="card-title">Gestión ambiental<br>y salud</h3>
+                                    <p>La Tecnicatura en Gestión Ambiental y Salud te capacita para abordar desafíos ambientales y su relación con la salud. Adquirirás habilidades para diseñar estrategias de gestión sostenible y promover un entorno saludable.</p>
+                                    <div class="card-footer">
+                                        <button class="button"><a href="https://drive.google.com/file/d/1n0dV7pKXQxb9BPSPLABETKGtmZS8C1hh/view?usp=drive_link" target="_blank">Plan de estudio</a></button>
+                                        <div class="icon-clock">
+                                            <i class="fas fa-clock"></i>
+                                            <span>3 años</span>
+                                        </div>
+                                    </div>
+                            </div>
 
-                <div class="card">
-                    <img src="img/textil.webp" alt="">
-                    <div class="card__content">
-                        <p class="card__title">Industria textil e indumentaria</p>
-                        <p class="card__description">La Tecnicatura en Industria Textil e Indumentaria te prepara para incursionar en la producción de prendas y textiles. Adquirirás habilidades en diseño, fabricación y gestión de procesos, garantizando la calidad y la innovación en la industria de la moda.</p>
-                        <div class="card__buttons">
-                            <a href="" target="_blank">
-                                <button class="card__button">Inscribirse</button>
-                            </a>
-                            <a href="https://drive.google.com/file/d/1xh53EwfurtSFZeYJpO4_qe3e5k0NmMWR/view?pli=1" target="_blank">
-                                <button class="card__button secondary">Plan de estudio</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                            <!-- CARD 5 -->
+                            <div class="card">
+                                    <img src="/img/textil.webp" alt="Industria textil e indumentaria">
+                                    <h3 class="card-title">Industria textil e indumentaria</h3>
+                                    <p>La Tecnicatura en Industria Textil e Indumentaria te prepara para incursionar en la producción de prendas y textiles. Adquirirás habilidades en diseño, fabricación y gestión de procesos, garantizando la calidad y la innovación en la industria de la moda.</p>
+                                    <div class="card-footer">
+                                        <button class="button"><a href="https://drive.google.com/file/d/1yKJoPRr_jUkxcD8sFHf_5-lldTxpK8TI/view?usp=drive_link" target="_blank">Plan de estudio</a></button>
+                                        <div class="icon-clock">
+                                            <i class="fas fa-clock"></i>
+                                            <span>3 años</span>
+                                        </div>
+                                    </div>
+                            </div>
 
-                <div class="card">
-                    <img src="img/logistica.webp" alt="">
-                    <div class="card__content">
-                        <p class="card__title">Logística</p>
-                        <p class="card__description">La Tecnicatura en Logística te capacita para coordinar procesos de distribución y almacenamiento. Adquirirás habilidades en gestión de inventarios y transporte, esenciales para la eficiencia operativa y la competitividad empresarial.</p>
-                        <div class="card__buttons">
-                            <a href="" target="_blank">
-                                <button class="card__button">Inscribirse</button>
-                            </a>
-                            <a href="https://drive.google.com/file/d/1xh53EwfurtSFZeYJpO4_qe3e5k0NmMWR/view?pli=1" target="_blank">
-                                <button class="card__button secondary">Plan de estudio</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                            <!-- CARD 6 -->
+                            <div class="card">
+                                    <img src="/img/logistica.webp" alt="Logística">
+                                    <h3 class="card-title">Logística</h3>
+                                    <p>La Tecnicatura en Logística te capacita para coordinar procesos de distribución y almacenamiento. Adquirirás habilidades en gestión de inventarios y transporte, esenciales para la eficiencia operativa y la competitividad empresarial.</p>
+                                    <div class="card-footer">
+                                        <button class="button"><a href="https://drive.google.com/file/d/1D0-iw13CzXedDKxoJPcfHl90nKcq3VOF/view?usp=drive_link" target="_blank">Plan de estudio</a></button>
+                                        <div class="icon-clock">
+                                            <i class="fas fa-clock"></i>
+                                            <span>3 años</span>
+                                        </div>
+                                    </div>
+                            </div>
 
-                <div class="card">
-                    <img src="img/turismo.webp" alt="">
-                    <div class="card__content">
-                        <p class="card__title">Turismo</p>
-                        <p class="card__description">La Tecnicatura en Turismo te forma para gestionar servicios turísticos. Adquirirás habilidades en planificación, promoción y gestión de destinos, fundamentales para la industria turística y la satisfacción del viajero.</p>
-                        <div class="card__buttons">
-                            <a href="" target="_blank">
-                                <button class="card__button">Inscribirse</button>
-                            </a>
-                            <a href="https://drive.google.com/file/d/1xh53EwfurtSFZeYJpO4_qe3e5k0NmMWR/view?pli=1" target="_blank">
-                                <button class="card__button secondary">Plan de estudio</button>
-                            </a>
+                            <!-- CARD 7 -->
+                            <div class="card">
+                                    <img src="/img/turismo.webp" alt="Turismo">
+                                    <h3 class="card-title">Turismo</h3>
+                                    <p>La Tecnicatura en Turismo te forma para gestionar servicios turísticos. Adquirirás habilidades en planificación, promoción y gestión de destinos, fundamentales para la industria turística y la satisfacción del viajero.</p>
+                                    <div class="card-footer">
+                                        <button class="button"><a href="https://drive.google.com/file/d/1TK-ChQS7KIypZ-E-47hAP_E69l5H7eH0/view?usp=drive_link" target="_blank">Plan de estudio</a></button>
+                                        <div class="icon-clock">
+                                            <i class="fas fa-clock"></i>
+                                            <span>3 años</span>
+                                        </div>
+                                    </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div> <!-- / div container -->
+            </section>
+        </div>
+
+        <!----------SECTION 3 - ENROLLMENT---------->
+        <section class="section3" id="enroll">
+            <div class="enroll">
+                <h2>¡Ya falta poco para que abran las inscripciones!</h2>
+                <p>A partir del 1 de diciembre, vas a poder completar la preinscripción mediante un formulario online.</p>
+                <p>Mientras tanto, podés ir preparando los siguientes documentos para presentar en la institución una vez confirmada la preinscripción:</p>
+                <ul>
+                    <li>Copia del DNI</li>
+                    <li>Copia del título secundario o certificado de título en trámite</li>
+                    <li>2 fotos carnet</li>
+                    <li>Copia del acta de nacimiento</li>
+                    <li>Certificado de salud psicofísico</li>
+                    <li>Planilla impresa de preinscripción</li>
+                </ul>
+            </div>
         </section>
 
-        <section id="s3" class="container">
-            <h2>¿Dónde estamos?</h2>
-                
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5100.007243972631!2d-57.56980715721161!3d-38.00140783158363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584deb47347f8b3%3A0xff3bf89a4a3dbc1d!2sISFT%20%C2%BA%20151!5e0!3m2!1ses-419!2sar!4v1696389703307!5m2!1ses-419!2sar" width="100%" height="150vw" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
+        <!----------SECTION 4 - CONTACT---------->
+        <div class="container">
+            <section class="section4" id="contact">
+                <h2>DÓNDE <span>ENCONTRARNOS</span></h2>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12575.920383069142!2d-57.58088529109955!3d-38.00092473659633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584deb47347f8b3%3A0xff3bf89a4a3dbc1d!2sISFT%20%C2%BA%20151!5e0!3m2!1ses-419!2sar!4v1698611899921!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="contact-info">
+                        <div class="contact-icon"><i class="fa-solid fa-location-dot"></i> <p>Castelli 4197, Mar del plata</p></div>
+                        <div class="contact-icon"><i class="fa-solid fa-clock"></i> <p>17:30 a 21:30 hs</p></div>
+                        <div class="contact-icon"><i class="fa-solid fa-phone"></i> <p>0223 472-7800</p></div>
+                        <div class="contact-icon"><i class="fa-solid fa-envelope"></i> <p>isft151preceptoria@gmail.com</p></div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-
-        </section>
-
+        <!----------FOOTER---------->
         <footer>
-
+            <div class="smedia">
+                <a href="https://www.facebook.com/isft151" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/instituto.superior.151" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="logo">
+                <img src="/img/logo2.webp" alt="Logo">
+            </div>
+            <div class="signature">
+                <p>Diseñado por Verónica Papp</p>
+                <p>Estudiante de 1° año - Análisis de Sistemas</p>
+                <p>&copy; 2023</p>
+            </div>
         </footer>
 
-
-
-
+        <script src="/js/carousel.js"></script>
+        <script src="/js/scroll.js"></script>
     </body>
 
 </html>
